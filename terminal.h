@@ -294,6 +294,7 @@ struct terminal_tag {
     int bellovl_t;
     int bidi;
     int bksp_is_delete;
+    int enter_sends_crlf;
     int blink_cur;
     int blinktext;
     int cjk_ambig_wide;

@@ -763,6 +763,7 @@ void cleanup_exit(int);
     X(INT, NONE, serflow) \
     /* Keyboard options */ \
     X(INT, NONE, bksp_is_delete) \
+    X(INT, NONE, enter_sends_crlf) \
     X(INT, NONE, rxvt_homeend) \
     X(INT, NONE, funky_type) \
     X(INT, NONE, no_applic_c) /* totally disable app cursor keys */ \

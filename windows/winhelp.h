@@ -26,6 +26,7 @@
 #define WINHELP_CTX_logging_ssh_omit_password "logging.ssh.omitpassword:config-logssh"
 #define WINHELP_CTX_logging_ssh_omit_data "logging.ssh.omitdata:config-logssh"
 #define WINHELP_CTX_keyboard_backspace "keyboard.backspace:config-backspace"
+#define WINHELP_CTX_keyboard_enter "keyboard.enter:config-enter"
 #define WINHELP_CTX_keyboard_homeend "keyboard.homeend:config-homeend"
 #define WINHELP_CTX_keyboard_funkeys "keyboard.funkeys:config-funkeys"
 #define WINHELP_CTX_keyboard_appkeypad "keyboard.appkeypad:config-appkeypad"

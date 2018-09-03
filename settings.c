@@ -540,6 +540,7 @@ void save_open_settings(void *sesskey, Conf *conf)
     write_setting_i(sesskey, "RFCEnviron", conf_get_int(conf, CONF_rfc_environ));
     write_setting_i(sesskey, "PassiveTelnet", conf_get_int(conf, CONF_passive_telnet));
     write_setting_i(sesskey, "BackspaceIsDelete", conf_get_int(conf, CONF_bksp_is_delete));
+    write_setting_i(sesskey, "EnterSendsCrLf", conf_get_int(conf, CONF_enter_sends_crlf));
     write_setting_i(sesskey, "RXVTHomeEnd", conf_get_int(conf, CONF_rxvt_homeend));
     write_setting_i(sesskey, "LinuxFunctionKeys", conf_get_int(conf, CONF_funky_type));
     write_setting_i(sesskey, "NoApplicationKeys", conf_get_int(conf, CONF_no_applic_k));
@@ -916,6 +917,7 @@ void load_open_settings(void *sesskey, Conf *conf)
     gppi(sesskey, "RFCEnviron", 0, conf, CONF_rfc_environ);
     gppi(sesskey, "PassiveTelnet", 0, conf, CONF_passive_telnet);
     gppi(sesskey, "BackspaceIsDelete", 1, conf, CONF_bksp_is_delete);
+    gppi(sesskey, "EnterSendsCrLf", 0, conf, CONF_enter_sends_crlf);
     gppi(sesskey, "RXVTHomeEnd", 0, conf, CONF_rxvt_homeend);
     gppi(sesskey, "LinuxFunctionKeys", 0, conf, CONF_funky_type);
     gppi(sesskey, "NoApplicationKeys", 0, conf, CONF_no_applic_k);

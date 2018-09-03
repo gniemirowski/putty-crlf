@@ -1382,6 +1382,7 @@ void term_copy_stuff_from_conf(Terminal *term)
     term->bellovl_t = conf_get_int(term->conf, CONF_bellovl_t);
     term->bidi = conf_get_int(term->conf, CONF_bidi);
     term->bksp_is_delete = conf_get_int(term->conf, CONF_bksp_is_delete);
+    term->enter_sends_crlf = conf_get_int(term->conf, CONF_enter_sends_crlf);
     term->blink_cur = conf_get_int(term->conf, CONF_blink_cur);
     term->blinktext = conf_get_int(term->conf, CONF_blinktext);
     term->cjk_ambig_wide = conf_get_int(term->conf, CONF_cjk_ambig_wide);
