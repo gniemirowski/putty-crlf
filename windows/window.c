@@ -4628,6 +4628,7 @@ static int TranslateKey(UINT message, WPARAM wParam, LPARAM lParam,
 	 */
 	if (wParam == VK_RETURN) {     /* Return */
 	    *p++ = 0x0D;
+	    if (conf_get_int(conf, CONF_enter_sends_crlf)) *p++ = 0x0A;
 	    *p++ = 0;
 	    return -2;
 	}
