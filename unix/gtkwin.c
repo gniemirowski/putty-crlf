@@ -1014,9 +1014,19 @@ static int return_key(GtkFrontend *inst, char *output, bool *special)
 #ifdef KEY_EVENT_DIAGNOSTICS
         debug(" - Return special case, translating as 0d + special\n");
 #endif
-        output[1] = '\015';
-        end = 2;
-        *special = true;
+	    if (conf_get_bool(inst->conf, CONF_enter_sends_crlf)) 
+        {
+            output[1] = '\015';
+            output[2] = '\012';
+            end = 3;
+            *special = true;
+        }
+        else
+        {
+            output[1] = '\015';
+            end = 2;
+            *special = true;
+        }
     }
 
     return end;
